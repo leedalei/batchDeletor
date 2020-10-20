@@ -16,17 +16,23 @@ go run .
 
 ## 构建
 - 构建mac程序
+```
 go env -w SET CGO_ENABLED=0
 go env -w SET GOOS=darwin
 go env -w SET GOARCH=amd64
 go build main.go
+```
 - 构建linux程序
+```
 go env -w SET CGO_ENABLED=0
 go env -w SET GOOS=linux
 go env -w SET GOARCH=amd64
 go build main.go
+```
 - 构建windows程序
+```
 go env -w SET CGO_ENABLED=0
 go env -w SET GOOS=windows
 go env -w SET GOARCH=amd64
 go build main.go
+```
